@@ -136,3 +136,44 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+a,
+.nav-toggle {
+  transition: 0.2s ease;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle:hover {
+  background-color: #222;
+  color: white;
+  }
+
+.site-nav {
+  display: none;
+}
+
+.site-nav.is-open {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 40px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 12px;
+  background-color: white;
+  z-index: 1;
+}
+}
